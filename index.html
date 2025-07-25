@@ -3,55 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon"
+    />
+
     <link rel="stylesheet" href="src/style.css" />
     <title>Home Workout Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Your Home Workout Creator</h1>
-      <h2>
-        Create your own 20 min home workout
-        <br />
-        Easy to follow along and adjusted to your needs
-        <br />
-        No equipment needed
-      </h2>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="What muscle(group) do you want to focus on?"
-          autofocus
-          required
-          autocomplete="off"
-          id=""
-        />
-        <input type="submit" value="Create" />
-      </form>
-      <div>
-        Motivational quote
-        <br />
-        Summary of things to take into account when focussing on this
-        muscle(group)
-        <br />
-        List of exercises with explanation and number of time/reps
-      </div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/lisanan" target="_blank">Lisa Nan</a>, is
-      open-sourced on
-      <a
-        href="https://github.com/LisaNan/home-workout-generator"
-        target="_blank"
-        >Github</a
-      >
-      and is hosted on
-      <a href="https://home-workout-generator.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+    <div class="container">
+      <header>
+        <h1>YOUR HOME WORKOUT 💪🏼</h1>
+      </header>
+      <main>
+        <h2>
+          create your own 20 minute home workout
+          <br />
+          <em>no equipment needed</em>
+        </h2>
+        <p>
+          <span class="material-symbols-outlined"> line_end_arrow_notch </span>
+          <span class="material-symbols-outlined"> line_end_arrow_notch </span>
+          <span class="material-symbols-outlined"> line_end_arrow_notch </span>
+        </p>
+        <form class="workout-form">
+          <input
+            type="text"
+            placeholder="What muscle(group) do you want to focus on?"
+            autofocus
+            required
+            autocomplete="off"
+            class="workout-text-input"
+            id=""
+          />
+          <input type="submit" value="Create" class="create-workout-button" />
+        </form>
+        <p>
+          <span class="material-symbols-outlined"> line_end_arrow_notch </span>
+          <span class="material-symbols-outlined"> line_end_arrow_notch </span>
+          <span class="material-symbols-outlined"> line_end_arrow_notch </span>
+        </p>
+        <div class="workout-output">
+          Motivational quote
+          <br />
+          Summary of things to take into account when focussing on this
+          muscle(group)
+          <br />
+          List of exercises with explanation and number of time/reps
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/lisanan" target="_blank">Lisa Nan</a>, is
+        open-sourced on
+        <a
+          href="https://github.com/LisaNan/home-workout-generator"
+          target="_blank"
+          >Github</a
+        >
+        and is hosted on
+        <a href="https://home-workout-generator.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
