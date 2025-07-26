@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,7 +37,7 @@
       </header>
       <main>
         <h2>
-          create your own 20 minute home workout
+          create your own 30 minute home workout
           <br />
           <em>no equipment needed</em>
         </h2>
@@ -52,7 +54,7 @@
             required
             autocomplete="off"
             class="workout-text-input"
-            id=""
+            id="muscle-group"
           />
           <input type="submit" value="Create" class="create-workout-button" />
         </form>
@@ -61,7 +63,9 @@
           <span class="material-symbols-outlined"> line_end_arrow_notch </span>
           <span class="material-symbols-outlined"> line_end_arrow_notch </span>
         </div>
-        <div class="workout-output" id="workout-plan">Motivational quote</div>
+        <div class="workout-output" id="workout-plan">
+          SWEAT NOW - SHINE LATER
+        </div>
       </main>
       <footer>
         This AI project was coded by
