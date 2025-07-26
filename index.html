@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,12 +39,12 @@
           <br />
           <em>no equipment needed</em>
         </h2>
-        <p>
+        <div>
           <span class="material-symbols-outlined"> line_end_arrow_notch </span>
           <span class="material-symbols-outlined"> line_end_arrow_notch </span>
           <span class="material-symbols-outlined"> line_end_arrow_notch </span>
-        </p>
-        <form class="workout-form">
+        </div>
+        <form class="workout-form" id="workout-creater-form">
           <input
             type="text"
             placeholder="What muscle(group) do you want to focus on?"
@@ -54,19 +56,12 @@
           />
           <input type="submit" value="Create" class="create-workout-button" />
         </form>
-        <p>
+        <div>
           <span class="material-symbols-outlined"> line_end_arrow_notch </span>
           <span class="material-symbols-outlined"> line_end_arrow_notch </span>
           <span class="material-symbols-outlined"> line_end_arrow_notch </span>
-        </p>
-        <div class="workout-output">
-          Motivational quote
-          <br />
-          Summary of things to take into account when focussing on this
-          muscle(group)
-          <br />
-          List of exercises with explanation and number of time/reps
         </div>
+        <div class="workout-output" id="workout-plan">Motivational quote</div>
       </main>
       <footer>
         This AI project was coded by
